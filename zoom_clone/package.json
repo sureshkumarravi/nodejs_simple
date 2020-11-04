@@ -1,21 +1,23 @@
 {
-  "name": "zoom_clone",
+  "name": "videochat_webrtc",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Video chat between 2 friends",
+  "main": "main.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "Start": "nodemon server.js",
+    "watch": "npx watchify ./public/main.js -o ./public/bundle.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Suresh Kumar",
   "dependencies": {
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "simple-peer": "^9.8.0",
     "socket.io": "^2.3.0",
     "uuid": "^8.3.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "watchify": "^3.11.1"
   }
 }
